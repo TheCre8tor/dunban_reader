@@ -44,7 +44,7 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
 
-    //Dagger - Hilt
+    // Dagger - Hilt
     runtimeOnly("com.google.dagger:hilt-android:2.48.1")
     runtimeOnly("com.google.dagger:hilt-android-compiler:2.48.1")
     implementation("androidx.hilt:hilt-compiler:1.0.0")
@@ -57,6 +57,10 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4")
+
+    // Coroutine Lifecycle Scopes
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 
     // base plugins
     implementation("androidx.core:core-ktx:1.12.0")
