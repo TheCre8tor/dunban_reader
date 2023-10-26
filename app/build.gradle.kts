@@ -45,10 +45,18 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore-ktx")
 
     //Dagger - Hilt
-    implementation("com.google.dagger:hilt-android:2.48.1")
-    implementation("com.google.dagger:hilt-android-compiler:2.48.1")
+    runtimeOnly("com.google.dagger:hilt-android:2.48.1")
+    runtimeOnly("com.google.dagger:hilt-android-compiler:2.48.1")
     implementation("androidx.hilt:hilt-compiler:1.0.0")
-    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
+    runtimeOnly("androidx.hilt:hilt-navigation-compose:1.0.0")
+
+    // Material icons
+    runtimeOnly("androidx.compose.material:material-icons-extended:1.5.4")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.4")
 
     // base plugins
     implementation("androidx.core:core-ktx:1.12.0")
